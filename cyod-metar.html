@@ -2,16 +2,32 @@
   <head>
     <title>Single ICAO - METAR Example</title>
  <style>
-.checkwx-container {
-  font-family: "Consolas, "Courier New", monospace;         
-  color: #222;                  
-}
-
-h3 {
-  font-family: Arial, sans-serif; /* headings clean sans-serif */
-  margin: 0.5rem 0;
-  color: #003366;                 /* air force blue-ish */
-}
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 20px;
+      background: #fff;
+    }
+    .wx-row {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+    }
+    .wx-label {
+      font-weight: bold;
+      font-size: 14px;
+      width: 120px;
+      padding-top: 6px;
+    }
+    .wx-box {
+      flex: 1;
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 14px;
+      background: #f8f8f8;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 8px 10px;
+      white-space: pre; /* keeps METAR/TAF line breaks */
+    }
 </style>
   </head>
 
