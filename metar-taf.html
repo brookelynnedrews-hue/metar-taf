@@ -1,36 +1,21 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Cold Lake METAR & TAF</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 1rem;
-      }
-      h3 {
-        margin-bottom: 0.25rem;
-      }
-      .checkwx-container {
-        margin-bottom: 1rem;
-      }
-    </style>
-  </head>
+<head><meta charset="utf-8"><title>METAR & TAF Dashboard</title>
+  <style>/* optional styles */</style>
+</head>
+<body>
+  <h3>Cold Lake (CYOD)</h3>
+  <div class="checkwx-container" data-type="METAR" data-station="CYOD"></div>
+  <div class="checkwx-container" data-type="TAF" data-station="CYOD"></div>
 
-  <body>
-    <h3>Cold Lake (CYOD)</h3>
-    <div class="checkwx-container" data-type="METAR" data-station="CYOD"></div>
-    <div class="checkwx-container" data-type="TAF" data-station="CYOD"></div>
+  <h3>Edmonton Intl (CYEG)</h3>
+  <div class="checkwx-container" data-type="METAR" data-station="CYEG"></div>
+  <div class="checkwx-container" data-type="TAF" data-station="CYEG"></div>
 
-    <h3>Edmonton Intl (CYEG)</h3>
-    <div class="checkwx-container" data-type="METAR" data-station="CYEG"></div>
-    <div class="checkwx-container" data-type="TAF" data-station="CYEG"></div>
+  <h3>Calgary Intl (CYYC)</h3>
+  <div class="checkwx-container" data-type="METAR" data-station="CYYC"></div>
+  <div class="checkwx-container" data-type="TAF" data-station="CYYC"></div>
 
-    <h3>Calgary Intl (CYYC)</h3>
-    <div class="checkwx-container" data-type="METAR" data-station="CYYC"></div>
-    <div class="checkwx-container" data-type="TAF" data-station="CYYC"></div>
-
-    <!-- Load CheckWX widget script -->
-    <script src="https://api.checkwx.com/widget?key=PUT-YOUR-API-KEY-HERE&refresh=10"></script>
-  </body>
+  <script src="https://api.checkwx.com/widget?key=YOUR_ACTUAL_CHECKWX_KEY&refresh=10"></script>
+</body>
 </html>
